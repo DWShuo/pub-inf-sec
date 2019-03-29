@@ -1,49 +1,89 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+        <title>Cybersecurity in critical infrastructure</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                <section data-background="images/cover.png">
+                    <div style="background-color: rgba(0, 43, 54, 0.9); color: #fff; padding: 15px;">
+                        <h3>Cyber-security in Critical Infrastructure</h3>
+                        <p>
+                        <small>David Wang</small>
+                        </p>
+                    </div>
+                </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+                <section>
+                    <section>
+                        <h2>What is critical infrastructure?</h2>
+                        <p>
+                        Assets physical or virtual, vital to the US that the incapacity or destruction of such systems and assets would have a debilitating impact on security, national public health or safety.
+                        </p>
+                        <p><small> - Patriot Act of 2001</small></p>
+                    </section>
+                    <section>
+                        <h3>NIPP 2013</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">National Infrastructure Protection Plan</li>
+                            <li class="fragment fade-in-then-semi-out">Model after 1998 Presidential Decision Directive-63</li>
+                            <li class="fragment fade-in-then-semi-out">Identifies <b>16</b> critical infrastructure sectors</li>
+                            <li class="fragment fade-in-then-semi-out">Sets forth comprehensive risk management framework</li>
+                            <li class="fragment fade-in-then-semi-out">Defines roles and responsibilites for federal, state, local agencies</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img class="stretch" src = "images/infrTypes.PNG">
+                    </section>
+                </section>
+
+                <section>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/search/search.js', async: true },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+        </script>
+    </body>
 </html>
