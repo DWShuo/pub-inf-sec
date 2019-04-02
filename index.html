@@ -63,8 +63,10 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                         <h3>General trends and risks of critical infrastructure</h3>
                         <p>
                         <small> References </small> <br>
-                        <small> <a href="sources/DHS-OCIA-CriticalInfrastructure2025.pdf">DHS U.S. Critical Infrastructure 2025: Strategic risk assessment</a></small>
-                        <small> <a href="sources/DHS-OCIA-InfrastructureCloudRisks.pdf">DHS Risks to Critical Infrastructure Using Cloud Services </a></small>
+                        <small> <a href="sources/DHS-OCIA-CriticalInfrastructure2025.pdf">DHS U.S. Critical Infrastructure 2025: Strategic risk assessment</a></small><br>
+                        <small> <a href="sources/DHS-OCIA-InfrastructureCloudRisks.pdf">DHS Risks to Critical Infrastructure Using Cloud Services </a></small><br>
+                        <small> <a href="sources/Year_in_Review_FY2014_Final.pdf">ICS-CERT 2014 year in review</a></small><br>
+                        <small> <a href="sources/Year_in_Review_FY2016_IR_Pie_Chart_S508C.pdf">ICS-CERT 2016 year in review</a></small>
                         </p>
                     </section>
                     <section>
@@ -156,10 +158,12 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                             <li class="fragment fade-in-then-semi-out">Attrative for its significant cost saving</li>
                             <li class="fragment fade-in-then-semi-out">Distributed capability may offer better availability than traditional IT and hosted services</li>
                             <li class="fragment fade-in-then-semi-out">Down side is cloud technology provides ample opportunities for unauthorized access and privilege escalation</li>
+                            <li class="fragment fade-in-then-semi-out">Cloud Adoption rate</li>
+                            <img class="fragment fade-in-then-semi-out" src = "images/cloudadopt.png"/>
                         </ul>
                     </section>
                     <section>
-                        <h3>Impact of disruptions to cloud systems</h3>
+                        <h3>Examples of industry adoption</h3>
                         <ul style="font-size:36px">
                             <li class="fragment fade-in-then-semi-out">Energy sector</li>
                             <ul>
@@ -167,8 +171,8 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                             </ul>
                             <li class="fragment fade-in-then-semi-out">Transportation system sector</li>
                             <ul class="fragment fade-in-then-semi-out">
-                                <li>Airline industry relies on cloud systems for scheduling passengers, flights and cargo</li>
-                                <li>Logistic industries and maritime shipping; misrouted transportation, adverse effect to manufacturing supply chain</li>
+                                <li>Airline industry rely on cloud systems for scheduling passengers, flights and cargo</li>
+                                <li>Logistic industries and maritime shipping scheduling and routing</li>
                             </ul>
                             <li class="fragment fade-in-then-semi-out">Industrial control systems</li>
                             <ul>
@@ -176,7 +180,59 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                             </ul>
                         </ul>
                     </section>
+                    <section>
+                        <h3>Potential attack vectors on cloud services</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Brute force</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>Brute force password combinations to gain unauthorized access</li>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">Data leakage</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>Accidental or intentional releasing of information outside intended audience</li>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">Denial of service</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>Prevent legitimte user from accessing information contained on the network</li>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">Ram scraping</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>Monitor and extract data from system during data processing while its unencrypted</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Potential attack vectors on cloud services (CONT)</h3>
+                        <ul>
+                            <li class="fragment fade-in-then-semi-out">Virtual machine escape</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>breaking out of virtual enviroment to gain elevated access to resources or interacting directly with with hosting enviroment</li>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">Phishing</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>Social engineering technique used to solicting privliged information</li>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">Hyperjacking</li>
+                            <ul class="fragment fade-in-then-semi-out">
+                                <li>Attack to compromise hypervisor, thus gaining control of underlying virtual machines managed by the hypervisor</li>
+                            </ul>
+                        </ul>
+                    </section>
 
+                    <section data-background="images/stateofus.jpg">
+                        <div style="background-color: rgba(0, 43, 54, 0.9); color: #fff; padding: 15px;">
+                            <h3>State of US infrastructure security</h3>
+                        </div>
+                    </section>
+                    <section>
+
+                    </section>
+                    <section>
+                        <img src="images/2014ics.png">
+                    </section>
+                    <section>
+                        <img src="images/2016ics.png">
+                    </section>
 
                 </section>
 
