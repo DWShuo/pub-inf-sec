@@ -203,7 +203,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                     </section>
                     <section>
                         <h3>Potential attack vectors on cloud services (CONT)</h3>
-                        <ul>
+                        <ul style="font-size:36px">
                             <li class="fragment fade-in-then-semi-out">Virtual machine escape</li>
                             <ul class="fragment fade-in-then-semi-out">
                                 <li>breaking out of virtual enviroment to gain elevated access to resources or interacting directly with with hosting enviroment</li>
@@ -218,14 +218,17 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                             </ul>
                         </ul>
                     </section>
-
                     <section data-background="images/stateofus.jpg">
                         <div style="background-color: rgba(0, 43, 54, 0.9); color: #fff; padding: 15px;">
                             <h3>State of US infrastructure security</h3>
                         </div>
                     </section>
                     <section>
-
+                        <h3>State of US infrastructure security</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">For now most attacks on US infrastructure are prepetrated for the purpose of obtaining intellectual property and/or sensitive data</li>
+                            <li class="fragment fade-in-then-semi-out">It is estimated the US incurs a economic loss of $300 billion per year as a result of theft of intellectual property and trade secrets</li>
+                        </ul>
                     </section>
                     <section>
                         <img src="images/2014ics.png">
@@ -233,7 +236,35 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                     <section>
                         <img src="images/2016ics.png">
                     </section>
-
+                    <section>
+                        <h3>Examples of infrastructure attacks</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Black Energy
+                                <small><a href="https://www.virusbulletin.com/virusbulletin/2017/07/vb2016-paper-blackenergy-what-we-really-know-about-notorious-cyber-attacks/">Link</a></small>
+                            </li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">First instance of Black Energy uses spear-phishing as its attack vector</li>
+                                <li class="fragment fade-in-then-semi-out">Emails were sent containing powerpoints embeded with CVE-2014-4114 which allowed remote attackers to execute arbitrary code via a crafted OLE object in an Office document</li>
+                                <li class="fragment fade-in-then-semi-out">Once infected black energy attempts to take over human-machine interfaces (HMIs) of industrial control systems </li>
+                                <li class="fragment fade-in-then-semi-out">Compromised systems include, GE Cimplicity, Advantech/Broadwin WebAccess and Siemens WinCC</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Examples of infrastructure attacks (CONT)</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Havex
+                                <small><a href="https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Dragonfly_Threat_Against_Western_Energy_Suppliers.pdf">Link</a></small>
+                            </li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Remote access trojan (RAT), targets energy grid operators, electricity generation firms, petroleum pipeline operators</li>
+                                <li class="fragment fade-in-then-semi-out">Estimated to have impacted as many as 2,000 infrastructure sites</li>
+                                <li class="fragment fade-in-then-semi-out">Attack vector spear-phishing and watering hole</li>
+                                <li class="fragment fade-in-then-semi-out">Once system has been infected havex scans for ICS on the network</li>
+                                <li class="fragment fade-in-then-semi-out">Collects information such as server name, Program ID, vendor information, running state, group count, and server bandwidth</li>
+                            </ul>
+                        </ul>
+                    </section>
                 </section>
 
             </div>
