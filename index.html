@@ -279,7 +279,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                         </div>
                     </section>
                     <section>
-                        <h3>Background on seaports</h3>
+                        <h3>background on seaports</h3>
                         <ul style="font-size:36px">
                             <li class="fragment fade-in-then-semi-out">Faciliate movement of trade to both foreign and domestic markets</li>
                             <ul>
@@ -325,7 +325,7 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                     <section>
                         <h3>Foreign dependencies</h3>
                         <ul style="font-size:36px">
-                            <li class="fragment fade-in-then-semi-out">Foreign hardware and software used by U.S. prots are vulnerable to the installation of malware during manufacturing process</li>
+                            <li class="fragment fade-in-then-semi-out">Foreign hardware and software used by U.S. ports are vulnerable to the installation of malware during manufacturing process</li>
                             <li class="fragment fade-in-then-semi-out">Zombie Zero</li>
                             <ul>
                                 <li class="fragment fade-in-then-semi-out">Malware preinstall and hidden within Chinese made scanner hardware used by shipping and logistic firms</li>
@@ -359,12 +359,157 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );
                         <div style="background-color: rgba(0, 43, 54, 0.9); color: #fff; padding: 15px;">
                             <h3>Traffic infrastructure</h3>
                             <small> References </small> <br>
-                            <small><a href="sources/DHS-SeaportCyberAttacks.pdf">DHS seaport cyber attacks</a></small><br>
-                            <small><a href="sources/Importance of Waterways 10-2014.pdf">A Reliable Waterway System Is Important to Agriculture</a></small><br>
-                            <small><a href="https://www.portoflosangeles.org/business/statistics/facts-and-figures">Port of Los Angeles facts and figures</a></small><br>
-                            <small><a href="sources/jamming.pdf">GPS jamming and the Impact on Maritime Navigation</a></small><br>
+                            <small><a href="sources/green light forever.pdf">Green Lights Forever: Analyzing the security of Traffic Infrastructure</a></small><br>
+                            <small><a href="sources/smart city traffic.pdf">Assessing and mitigating cybersecurity risks of traffic lights systems in smart cities</a></small><br>
                         </div>
                     </section>
+                    <section>
+                        <h3>Anatomy of traffic intersection</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Sensors</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Used to detect cars and inspect infrastructure</li>
+                                <li class="fragment fade-in-then-semi-out">Indcution loops and cameras are most commonly used</li>
+                                <li class="fragment fade-in-then-semi-out">radar and ultrasonic sensors are less common</li>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">Controllers</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Connects directly to sensors and control light states</li>
+                                <li class="fragment fade-in-then-semi-out">Can be configured to operate in different modes</li>
+                                <ul>
+                                    <li class="fragment fade-in-then-semi-out">Pre-timed mode; controlled on preset timings</li>
+                                    <li class="fragment fade-in-then-semi-out">Semi-actuated mode; side street activates based on sensors and main street runs continuously</li>
+                                    <li class="fragment fade-in-then-semi-out">Fully-actuated; both streets are serviced based on sensor input</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Anatomy of traffic intersection (CONT)</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Communications</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Controllers may communicate with both each other and central server to share information</li>
+                                <li class="fragment fade-in-then-semi-out">Hard-wired communication is sometimes used but become difficult to maintain as the city grows</li>
+                                <li class="fragment fade-in-then-semi-out">Radios are most commonly used to provide connectivity</li>
+                                <li class="fragment fade-in-then-semi-out">Operates in ISM band at 900 MHz or 5.8 GHz</li>
+                            </ul>
+
+                            <li class="fragment fade-in-then-semi-out">Malfunction Management Unit</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Hardware-level safety mechanism</li>
+                                <li class="fragment fade-in-then-semi-out">Physical "whitelist" of valid light states</li>
+                                <li class="fragment fade-in-then-semi-out">In case of conflict MMU overrides the controller and forces known-safe configuration</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Example of MMU</h3>
+                        <img class="stretch" src = "images/mmu.jpg">
+                    </section>
+                    <section>
+                        <h3>Typical traffic intersection</h3>
+                        <img class="stretch" src = "images/trafficlight.png">
+                    </section>
+                    <section>
+                        <h3>Traffic signal network</h3>
+                        <img class="stretch" src = "images/trafficnet.png">
+                        <ul style="font-size:36px">
+                                <li class="fragment fade-in-then-semi-out">All devices form a single private network and belong to the same IP subnet</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Traffic signal network (CONT)</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">5.8 GHz radios</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">5.8 GHZ are preferred for its higher data rates</li>
+                                <li class="fragment fade-in-then-semi-out">Communicates using proprietary protocol, utilize point to point or point ot multipoint connections</li>
+                                <li class="fragment fade-in-then-semi-out">Similar to 802.11 protocol and broadcasts an SSID which is visible from standard laptops and smartphones</li>
+                                <li class="fragment fade-in-then-semi-out">Connections between radios are unencrypted</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Traffic signal network (CONT)</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">900 MHz radios</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Used when there is not a direct line of sight connection due to obstructions</li>
+                                <li class="fragment fade-in-then-semi-out">Uses proprietary spread spectrum protocol</li>
+                                <li class="fragment fade-in-then-semi-out">In order to make connection, both master and slave must know the network name a 16-bit slave ID value</li>
+                                <li class="fragment fade-in-then-semi-out">Similar to 5.8 GHz radios there are no encryption between connections</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Traffic signal network (CONT)</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Controller netwroking</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Controller settings maybe modifed through the network via a FTP connection whcih allows access to writable configuration database</li>
+                                <li class="fragment fade-in-then-semi-out">Writing requires a username and password, but most left at default values</li>
+                                <li class="fragment fade-in-then-semi-out">command can be sent via the NTCIP protocol 1202, which specifies traffic signal communication standards</li>
+                                <li class="fragment fade-in-then-semi-out">During installation operating system build leaves debug port open for testing. Often times OS is not rebuilt with port disabled</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Attacking traffic infrastructure network</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Once the network is accessed at a single point, the attacker can send commands to any intersection on the network</li>
+                            <li class="fragment fade-in-then-semi-out">5.8 GHZ radios</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Due to the lack of encryption, any radio that implements the proprietary protocol and has knowledge of the SSID can access the network</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Attacking traffic infrastructure network (CONT)</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">900 MHz radios</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">requires knowledge of both the network name and the 16-bit slave ID value</li>
+                                <li class="fragment fade-in-then-semi-out">Frequency hopping done by Spread spectrum protocol makes sniffing packets difficult</li>
+                                <li class="fragment fade-in-then-semi-out">16-bit ID can be brute forced and theoretically only require several days</li>
+                                <li class="fragment fade-in-then-semi-out">In pratice most ID values were less than one hundred and can be brute forced in minutes</li>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Accessing traffic controller</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Once on the network there are two primary methods of accessing the controller</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Take advantage of the open debug port</li>
+                                <ul class="fragment fade-in-then-semi-out">
+                                    <li>Debug port gives attacker ability to read and write arbitrary memory locations, kill tasks, an reboot device</li>
+                                </ul>
+                                <li class="fragment fade-in-then-semi-out">Remote control functionality defined by NTCIP 1202</li>
+                                <ul class="fragment fade-in-then-semi-out">
+                                    <li>Attackers can craft a UDP packet wih commands dfined by NTCIP</li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Controlling the lights</h3>
+                        <ul style="font-size:36px">
+                            <li class="fragment fade-in-then-semi-out">Two vectors of attack are available</li>
+                            <ul>
+                                <li class="fragment fade-in-then-semi-out">Malicious logic statements</li>
+                                <ul class="fragment fade-in-then-semi-out">
+                                    <li>Switching the state of specific light, or freezing the state of the intersection </li>
+                                </ul>
+                                <li class="fragment fade-in-then-semi-out">Modify light timings</li>
+                                <ul class="fragment fade-in-then-semi-out">
+                                    <li>Shorten or lengthen the timing of specific light states</li>
+                                </ul>
+                            </ul>
+                            <li class="fragment fade-in-then-semi-out">MMU still maintains safety by disallowing conflicting lights</li>
+                        </ul>
+                    </section>
+
 
                 </section>
             </div>
